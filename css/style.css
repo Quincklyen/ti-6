@@ -28,7 +28,7 @@ section {
     margin-bottom: 120px;
 }
 
-img {
+.intro img {
     border-radius: 50%;
 }
 
@@ -73,7 +73,7 @@ button {
     padding: 0;
     border: none;
     color: var(--green);
-    background-color: var(--white);
+    background-color: transparent;
     cursor: pointer;
 
     text-transform: lowercase;
@@ -91,13 +91,8 @@ button:hover {
     background-color: var(--green);
 }
 
-footer {
-    color:var(--white);
-    background-color: var(--black);
-}
-
 p.subtitle {
-    font-family: 'Open Sans';
+    font-family: "Open Sans", "Arial", sans-serif;
 
     font-style: normal;
     font-weight: 400;
@@ -129,7 +124,7 @@ p.subtitle {
 
     padding: 10px 15px;
 
-    font-family: 'Open Sans';
+    font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -194,17 +189,17 @@ p.subtitle {
     line-height: 1;
 }
 
-
 .skill-list dt {
     margin-bottom: 6px;
     padding: 5px 0 5px 38px;
     background-position: left;
     background-repeat: no-repeat;
     background-size: 30px;
+
+    text-transform: lowercase;
 }
 
-
-.skill-level dd{
+.skill-list dd{
     margin: 4px 0 20px;
     padding: 2px;
     font-size: 0;
@@ -212,18 +207,11 @@ p.subtitle {
     border-radius: 16px;
 }
 
-
-.skill-level div {
+.skill-list div {
     height: 14px;
     background-color: var(--green);
     border-radius: 8px;
 }
-
-
-.skill-item dt{
-    text-transform: lowercase;
-}
-
 
 .skill-item_html {
     background-image: url("../img/icon-html.svg");
@@ -271,7 +259,7 @@ p.subtitle {
     gap: 12px;
 
     background-repeat: no-repeat;
-    background-position: 0%;
+    background-position: 0;
 }
 
 .contact a:hover {
@@ -309,7 +297,7 @@ p.subtitle {
     width: 50px;
     height: 50px;
     border: 1px solid var(--green);
-    border-radius: 5e+07px;
+    border-radius: 50%;
 
     background-repeat: no-repeat;
     background-position: 50%;
@@ -335,7 +323,7 @@ p.subtitle {
     background-image: url(../img/property-vk.svg);
 }
 
-.social span {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -352,6 +340,9 @@ p.subtitle {
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+    color:var(--white);
+    background-color: var(--black);
 
     align-items: flex-start;
     padding: 50px 244px;
