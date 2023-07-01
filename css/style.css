@@ -352,8 +352,7 @@ div.skill-about {
     color:var(--white);
     background-color: var(--black);
 
-    padding: 50px 0px 50px 0px;
-    gap: 10px;
+    padding: 50px 0 50px 0;
 }
 
 :root {
